@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>واجبات الأستاذ مصطفى عيسى</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>رفع واجبات الأستاذ مصطفى عيسى</h1>
+        <form id="upload-form">
+            <label for="name">اسم الطالب:</label>
+            <input type="text" id="name" name="name" placeholder="أدخل اسم الطالب" required>
+
+            <label for="class">الصف:</label>
+            <input type="text" id="class" name="class" placeholder="أدخل الصف" required>
+
+            <label for="file">اختر ملفاً أو صورة:</label>
+            <input type="file" id="file" name="file" accept="image/jpeg, image/png, application/pdf" required>
+
+            <label for="code">أدخل الكود (للمحاولة الثانية فقط):</label>
+            <input type="text" id="code" name="code" placeholder="أدخل الكود" required>
+
+            <button type="submit">رفع الملف</button>
+        </form>
+        <p id="status"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
